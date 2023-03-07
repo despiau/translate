@@ -1,6 +1,7 @@
 const recognition = new webkitSpeechRecognition();
 recognition.continuous = true;
 recognition.interimResults = true;
+recognition.maxAlternatives = 1;
 
 const outputDiv = document.getElementById('output');
 const outputSpanishDiv = document.getElementById('outputSpanish');
